@@ -71,16 +71,16 @@ div#sidebar .icon img {
     rotate: 25deg;
 }
 
-div#sidebar > a > div:not(.icon) {
+div#sidebar div:not(.icon) {
     border-bottom: 1px solid var(--col-bg-dark-1);
     padding: 1em;
     color: var(--col-text-black)
 }
-div#sidebar > a > div.clickable:hover {
+div#sidebar div.clickable:hover {
     border-bottom: 1px solid var(--col-bg-dark-2);
     background-color: var(--col-bg-dark-1);
 }
-div#sidebar > a > div.current-page {
+div#sidebar div.current-page {
     border-bottom: 1px solid var(--col-bg-dark-2);
     background-color: var(--col-accent);
 }
