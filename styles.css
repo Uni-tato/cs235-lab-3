@@ -1,0 +1,208 @@
+:root {
+    --col-bg: #F5F5F5;
+    --col-bg-dark-1: #e7e9eb;
+    --col-bg-dark-2: #cccccc;
+
+    --col-text-black: #000000;
+
+    --col-accent: #cc3f0c;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background-color: var(--col-bg-dark-1);
+    color: var(--col-text-black);
+}
+
+/* Simple Formatting stuff */
+.circle {
+    border-radius: 50%;
+}
+.white {
+    background-color: var(--col-bg);
+}
+.accent {
+    background-color: var(--col-accent)
+}
+.h-just {
+    text-align: justify;
+}
+.h-just > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.fill {
+    width: 100%;
+}
+.center {
+    text-align: center;
+}
+
+/* Sidebar */
+div#sidebar {
+    float: left;
+    background-color: var(--col-bg);
+    color: var(--col-text-black);
+    overflow: auto;
+    text-align: center;
+    height: 100%;
+    width: 10em;
+    position: fixed;
+    border-right: 2px solid var(--col-bg-dark-2);
+    box-shadow: 0px 0px 6px 3px var(--col-bg-dark-2);
+    overflow:hidden;
+}
+
+div#sidebar .icon {
+    width: 8.5em;
+    height: 8.5em;
+    text-align: center;
+    box-shadow: 0px 0px 6px 3px var(--col-bg-dark-2);
+    margin: 0.75em 0 2em 0.75em;
+}
+div#sidebar .icon img {
+    display: inline;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    rotate: 25deg;
+}
+
+div#sidebar > a > div:not(.icon) {
+    border-bottom: 1px solid var(--col-bg-dark-1);
+    padding: 1em;
+    color: var(--col-text-black)
+}
+div#sidebar > a > div.clickable:hover {
+    border-bottom: 1px solid var(--col-bg-dark-2);
+    background-color: var(--col-bg-dark-1);
+}
+div#sidebar > a > div.current-page {
+    border-bottom: 1px solid var(--col-bg-dark-2);
+    background-color: var(--col-accent);
+}
+div#sidebar > a {
+    text-decoration: none;
+}
+
+/* Content including header/footer */
+div#content{
+    margin: 0 0 0 10em;
+}
+
+/* Header */
+div#header {
+    background-color: var(--col-bg);
+    padding: 1em;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 2px solid var(--col-bg-dark-2);
+    box-shadow: 0px 0px 6px 3px var(--col-bg-dark-2);
+}
+
+div#header h1 {
+    margin: 0;
+    padding: 1em;
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--col-accent);
+}
+
+/* Main content/body of website */
+div#main{
+    background-color: var(--col-bg);
+    padding: 2.5em;
+    border: 2px solid var(--col-bg-dark-2);
+    margin:3em 3em 3em 3em;
+    box-shadow: 0px 0px 6px 3px var(--col-bg-dark-2);
+}
+
+.image-game-link {
+    display:inline-block;
+
+    border-radius: 5px;
+    border: 1px solid var(--col-bg);
+    box-shadow: 0px 0px 6px 3px var(--col-bg-dark-2);
+    
+    margin: 1em auto 1em auto;
+
+    text-decoration: none;
+    color: var(--col-text-black);
+    overflow: hidden;
+}
+
+.image-game-link.text-below {
+    width: 200px;
+}
+.image-game-link.text-below > img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.image-game-link.text-below > p {
+    text-align: left;
+    padding: 1em;
+    margin: 0;
+}
+
+.image-game-link.text-right {
+    width: 100%;
+    max-width: 75em;
+    height: 150px;
+}
+.image-game-link.text-right > img {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: inline-block;
+}
+.image-game-link.text-right > p {
+    text-align: left;
+    vertical-align: top;
+    display:inline-block;
+    width: calc(100% - 300px - 2em - 5px); /* I'll be honest, I have no idea why we need that extra 5px on the end, but it breaks otherwise. */
+    margin: 0;
+    padding:1em;
+}
+
+.image-game-link:hover {
+    border: 1px solid var(--col-accent);
+    box-shadow: 0px 0px 12px 6px var(--col-bg-dark-2);
+    background-color: var(--col-bg-dark-1);
+}
+
+/* Footer */
+div#footer {
+    background-color: var(--col-bg);
+    color: var(--col-text-black);
+    padding: 1em;
+    overflow: hidden;
+    text-align: center;
+    border-top: 2px solid var(--col-bg-dark-2);
+    box-shadow: 0px 0px 6px 3px var(--col-bg-dark-2);
+    text-align: center;
+}
+div#footer a {
+    color: var(--col-accent);
+    text-decoration: none;
+}
+div#footer > .footnote {
+    width: 100%;
+    margin: 0.5em;
+}
+div#footer > .footnote > ul {
+    list-style-type: none;
+    display: inline;
+    padding: 0;
+}
+div#footer > .footnote > ul > li {
+    display: inline;
+    padding: 0 0.5em 0 0.5em;
+}
+
+
