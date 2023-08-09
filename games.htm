@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Browse</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="games.css">
+</head>
+
+<body>
+
+    <div id="sidebar">
+        
+        <div class="accent circle icon"><img src="images/gamepad-solid-white.svg" alt="icon" width="100%"></div>
+
+        <a href="layout.htm">
+            <div class="clickable">Home</div>
+        </a>
+        <a href="games.htm">
+            <div class="current-page">Browse</div>
+        </a>
+        <a href="gameDescription.htm">
+            <div class="clickable">Test game description page</div>
+        </a>
+        <div class="clickable">Categories</div>
+        <div>Clicking the above should expand it into a list of categories/genres</div>
+    </div>
+
+    <div id="content">
+        <div id="header">
+            <h1>CS325 Game Library</h1>
+        </div>
+
+        <div id="main">
+            <h2>Search for games</h2>
+            <form id="game-search">
+                <label for="search">Search:</label>
+                <input type="text" id="search" name="search" placeholder="Search for games..." class="rounded-interaction">
+                <input type="submit" value="Search" class="rounded-interaction"><br><br>
+            </form>
+
+            <h2>Filter by tags</h2>
+            <h3>Search for tags</h3>
+            <form>
+                <label for="tag-search">Search:</label>
+                <select name="tags" id="tag-search" class="rounded-interaction">
+                    <option value="">Select a tag</option>
+                    <option value="2d">2d</option>
+                    <option value="3d">3d</option>
+                    <option value="8-bit">8-bit</option>
+                    <option value="Action">Action</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Arcade">Arcade</option>
+                    <option value="Atmospheric">Atmospheric</option>
+                    <option value="Casual">Casual</option>
+                    <option value="Co-op">Co-op</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Competitive">Competitive</option>
+                    <option value="Controller">Controller</option>
+
+                    <input type="submit" value="Add tag" class="rounded-interaction">
+                </select>
+            </form>
+
+            <h3>Popular tags</h3>
+            <div class="tag-button rounded-interaction">Action</div>
+            <div class="tag-button rounded-interaction">First-person</div>
+            <div class="tag-button rounded-interaction">Multiplayer</div>
+            <div class="tag-button rounded-interaction">RPG</div>
+            <div class="tag-button rounded-interaction">Retro</div>
+            <div class="tag-button rounded-interaction">Casual</div>
+            <div class="tag-button rounded-interaction">Single-player</div>
+            <div class="tag-button rounded-interaction">Strategy</div>
+            <div class="tag-button rounded-interaction">Survival</div>
+            <div class="tag-button rounded-interaction">Third-person</div>
+            <div class="tag-button rounded-interaction">Turn-based</div>
+            <div class="tag-button rounded-interaction">Horror</div>
+        </div>
+
+        <div class="center" style="max-width: 75em; margin: auto;">
+            <a href="gameDescription.htm" target="_self" class="image-game-link text-below">
+                <img src="images/game1.jpg" alt="Game1">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, similique...</p>
+            </a>
+            <a href="gameDescription.htm" target="_self" class="image-game-link text-below">
+                <img src="images/game2.jpg" alt="Game2">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, similique...</p>
+            </a>
+            <a href="gameDescription.htm" target="_self" class="image-game-link text-below">
+                <img src="images/game3.jpg" alt="Game3">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, similique...</p>
+            </a>
+            <a href="gameDescription.htm" target="_self" class="image-game-link text-below">
+                <img src="https://via.placeholder.com/200x100" alt="Game4">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, similique...</p>
+            </a>
+            <a href="gameDescription.htm" target="_self" class="image-game-link text-below">
+                <img src="https://via.placeholder.com/200x100" alt="Game5">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, similique...</p>
+            </a>
+            <a href="gameDescription.htm" target="_self" class="image-game-link text-below">
+                <img src="https://via.placeholder.com/200x100" alt="Game6">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, similique...</p>
+            </a>
+            <a href="gameDescription.htm" target="_self" class="image-game-link text-below">
+                <img src="https://via.placeholder.com/200x100" alt="Game7">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, similique...</p>
+            </a>
+            <a href="gameDescription.htm" target="_self" class="image-game-link text-below">
+                <img src="https://via.placeholder.com/200x100" alt="Game8">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, similique...</p>
+            </a>
+            <a href="gameDescription.htm" target="_self" class="image-game-link text-below">
+                <img src="https://via.placeholder.com/200x100" alt="Game9">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, similique...</p>
+            </a>
+            <a href="gameDescription.htm" target="_self" class="image-game-link text-below">
+                <img src="https://via.placeholder.com/200x100" alt="Game10">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, similique...</p>
+            </a>
+            <a href="gameDescription.htm" target="_self" class="image-game-link text-below">
+                <img src="https://via.placeholder.com/200x100" alt="Game11">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, similique...</p>
+            </a>
+            <a href="gameDescription.htm" target="_self" class="image-game-link text-below">
+                <img src="https://via.placeholder.com/200x100" alt="Game12">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, similique...</p>
+            </a>
+        </div>
+
+        <div id="footer">
+            <div class="footnote">CS325 GameLib</div>
+            <div class="footnote">Page created by Alex Lasenby - alas165 - 365471806</div>
+            <div class="footnote">
+                <ul>
+                    <li><a href="layout.htm" target="_self">Home</a></li>
+                    <li><a href="games.htm" target="_self">Browse</a></li>
+                    <li><a href="gameDescription.htm" target="_self">Test game description page</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

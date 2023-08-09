@@ -1,0 +1,46 @@
+.rounded-interaction {
+    display: inline-block;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid var(--col-bg-dark-2);
+    background-color: var(--col-bg-dark-1);
+    color: var(--col-text-black);
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 3px var(--col-bg-dark-2);
+}
+.rounded-interaction:hover {
+    border: 1px solid var(--col-accent);
+    background-color: var(--col-bg-dark-2);
+}
+.rounded-interaction:focus {
+    border: 1px solid var(--col-accent);
+    background-color: var(--col-bg-dark-2);
+}
+
+/* #tag-search {
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid var(--col-bg-dark-2);
+    background-color: var(--col-bg-dark-1);
+    color: var(--col-text-black);
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 3px var(--col-bg-dark-2);
+}
+
+div.tag-button {
+    display: inline-block;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid var(--col-bg-dark-2);
+    background-color: var(--col-bg-dark-1);
+    color: var(--col-text-black);
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 3px var(--col-bg-dark-2);
+}
+div.tag-button:hover {
+    border: 1px solid var(--col-accent);
+    background-color: var(--col-bg-dark-2);
+} */

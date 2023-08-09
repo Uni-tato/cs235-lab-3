@@ -136,6 +136,7 @@ div#main{
 
 .image-game-link.text-below {
     width: 200px;
+    margin: 1em
 }
 .image-game-link.text-below > img {
     width: 200px;
